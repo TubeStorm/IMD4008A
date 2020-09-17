@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Tutorial 7</string>
+    <string name="current_steps">Current Steps</string>
+    <string name="_0">0</string>
+    <string name="start_pedometer">START PEDOMETER</string>
+    <string name="stop_pedometer">STOP PEDOMETER</string>
+    <string name="previous_steps">Previous Steps</string>
+</resources>

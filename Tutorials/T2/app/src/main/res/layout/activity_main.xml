@@ -1,0 +1,242 @@
+a<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <TableLayout
+        android:id="@+id/maintable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:stretchColumns="*"
+        >
+
+        <!-- ROW ONE -->
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="50dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/firsttext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title"
+                        android:textSize="40dp"
+                        android:layout_span="4"
+                        android:gravity="center" />
+
+                </TableRow>
+
+        <!-- ROW TWO -->
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="50dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/secondtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Counter"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/thirdtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:freezesText="true"
+                        android:textSize="20dp" />
+
+                    <Button
+                        android:id = "@+id/inc"
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+                        android:text = "+"
+                        android:onClick="buttonClick"/>
+
+                    <Button
+                        android:id = "@+id/dec"
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+                        android:text = "-"
+                        android:onClick="buttonClick"/>
+
+                </TableRow>
+
+        <!-- ROW THREE -->
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="50dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/fourthtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Toggle Background"
+                        android:layout_span="2"
+                        android:textSize="20dp" />
+
+                    <Switch
+                        android:id="@+id/mySwitch"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_span="5"
+                        android:layout_gravity="center"
+                        />
+
+                </TableRow>
+
+        <!-- ROW FOUR -->
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="50dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/fifthtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Un-Checked"
+                        android:layout_span="2"
+                        android:textSize="20dp" />
+
+                    <CheckBox
+                        android:id="@+id/check"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_span="5"
+                        android:layout_gravity="center"
+                        android:onClick="onCheckBoxClicked" />
+
+
+                </TableRow>
+
+
+        <!-- ROW FIVE -->
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    >
+
+                    <View
+                        android:id="@+id/rview"
+                        android:layout_width="218dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_span="2"
+                        android:background="#ff0000" />
+
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_span="2"
+                        android:gravity="center" >
+
+                        <RadioGroup
+                            android:id="@+id/rg"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content" >
+
+                            <RadioButton
+                                android:id="@+id/red"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/RED"
+                                android:textColor="@color/red"
+                                android:textStyle="bold|italic"
+                                android:layout_marginBottom="10sp"
+                                android:buttonTint="@color/red"
+                                android:onClick="onRadioButtonClicked"/>
+
+                            <RadioButton
+                                android:id="@+id/blue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/BLUE"
+                                android:textColor="@color/blue"
+                                android:textStyle="bold|italic"
+                                android:layout_marginBottom="10sp"
+                                android:buttonTint="@color/blue"
+                                android:onClick="onRadioButtonClicked"/>
+
+                            <RadioButton
+                                android:id="@+id/green"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/GREEN"
+                                android:textColor="@color/green"
+                                android:textStyle="bold|italic"
+                                android:layout_marginBottom="10sp"
+                                android:buttonTint="@color/green"
+                                android:onClick="onRadioButtonClicked"/>
+
+
+
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+        <!-- ROW SIX -->
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center">
+
+                    <RatingBar
+                        android:id="@+id/rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:saveEnabled="true"
+                        android:stepSize="1"
+                        android:numStars="5"/>
+
+
+                </TableRow>
+
+        <!-- ROW SEVEN -->
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/sixthtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="2"
+                        android:layout_gravity="center"
+                        android:text="0"
+                        android:textSize="30dp" />
+
+                </TableRow>
+
+            </TableLayout>
+
+    </ScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>

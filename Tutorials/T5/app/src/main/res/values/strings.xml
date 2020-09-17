@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Tutorial 5</string>
+    <string name="schedule_notification">Schedule Notification</string>
+    <string name="notification_text">Notification Text</string>
+    <string name="this_is_a_notification">This is a notification</string>
+    <string name="send_notification">Send Notification</string>
+    <string name="enter_notification_id">Enter New Notification ID</string>
+    <string name="_2">2</string>
+</resources>

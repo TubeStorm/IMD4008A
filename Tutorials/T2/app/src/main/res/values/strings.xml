@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tutorial2</string>
+    <string name="title">Main Screen</string>
+    <string name="RED">RED</string>
+    <string name="BLUE">BLUE</string>
+    <string name="GREEN">GREEN</string>
+</resources>
